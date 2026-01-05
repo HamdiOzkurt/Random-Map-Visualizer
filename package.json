@@ -1,0 +1,27 @@
+{
+  "name": "random-map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index --experimental-modules",
+    "stop": "pm2 stop all",
+    "reload": "pm2 reload all",
+    "kill": "pm2 kill",
+    "logs": "pm2 logs",
+    "status": "pm2 status",
+    "monit": "pm2 monit",
+    "deploy": "pm2 start index.js --name random-map -f",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hamdi_ozkurt/random-coordinate-generator": "^1.0.0",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1",
+    "pm2": "^6.0.14"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@hamdi_ozkurt/random-coordinate-generator",
+  "version": "1.0.1",
+  "main": "build/index.js",
+  "type": "commonjs",
+  "builtEntryPoint": "build/index.js",
+  "private": false,
+  "keywords": [
+    "node.js",
+    "javascript",
+    "random-coordinate-generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/hamdi/random-coordinate-generator/issues"
+  },
+  "scripts": {
+    "build": "npx babel src -d ./build --copy-files",
+    "dev": "npx babel-node src/index.js --copy-files --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/node": "^7.28.0",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/register": "^7.28.3"
+  }
+}
