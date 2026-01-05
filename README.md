@@ -20,7 +20,7 @@ This is a custom library developed specifically for this project's needs, ensuri
 
 ### Local Development Module
 The project includes the source code for this package in the local directory structure:
-*   `📂 random-coordinate-generator/`: Contains the full source code of the NPM package. This allows for rapid prototyping and modification of the core generation logic alongside the main application.
+*   `random-coordinate-generator/`: Contains the full source code of the NPM package. This allows for rapid prototyping and modification of the core generation logic alongside the main application.
 
 ## Installation
 
@@ -51,7 +51,7 @@ Follow these steps to set up the project locally:
 4.  **Access the App**
     Open your browser and navigate to: `http://localhost:80`
 
-## 📖 API & Usage
+## API & Usage
 
 The application serves both web views and API JSON responses.
 
@@ -73,9 +73,9 @@ The application serves both web views and API JSON responses.
 
 ```
 random-map-visualizer/
-├── 📂 random-coordinate-generator/ # Source code for the custom NPM package
-├── 📂 routes/                      # Express route handlers (API & Render)
-├── 📂 views/                       # EJS templates for Map visualization
+├── random-coordinate-generator/ # Source code for the custom NPM package
+├── routes/                      # Express route handlers (API & Render)
+├── views/                       # EJS templates for Map visualization
 ├── index.js                        # Application entry point
 ├── package.json                    # Project dependencies and scripts
 └── README.md                       # Project documentation
