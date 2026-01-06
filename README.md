@@ -4,7 +4,7 @@
 
 This project demonstrates the integration of a custom-built NPM package with a modern Express.js backend and a frontend visualization layer powered by Yandex Maps API.
 
-## 🚀 Key Features
+## Key Features
 
 *   **Custom Coordinate Generation**: Utilizes a specialized algorithm to produce valid, random latitude and longitude pairs.
 *   **Interactive Visualization**: Instantly plots generated points on a global map interface.
@@ -12,7 +12,7 @@ This project demonstrates the integration of a custom-built NPM package with a m
 *   **Multi-View Support**: Capable of rendering single points or multiple scattered locations in one view.
 *   **Modular Architecture**: Built with clean code practices, separating routes, views, and core logic.
 
-## 📦 Core Technology: Custom NPM Package
+## Core Technology: Custom NPM Package
 
 The heart of this application is the **[@hamdi_ozkurt/random-coordinate-generator](https://www.npmjs.com/package/@hamdi_ozkurt/random-coordinate-generator)** package. 
 
@@ -20,9 +20,9 @@ This is a custom library developed specifically for this project's needs, ensuri
 
 ### Local Development Module
 The project includes the source code for this package in the local directory structure:
-*   `📂 random-coordinate-generator/`: Contains the full source code of the NPM package. This allows for rapid prototyping and modification of the core generation logic alongside the main application.
+*   `random-coordinate-generator/`: Contains the full source code of the NPM package. This allows for rapid prototyping and modification of the core generation logic alongside the main application.
 
-## 🛠️ Installation
+## Installation
 
 Follow these steps to set up the project locally:
 
@@ -51,37 +51,37 @@ Follow these steps to set up the project locally:
 4.  **Access the App**
     Open your browser and navigate to: `http://localhost:80`
 
-## 📖 API & Usage
+## API & Usage
 
 The application serves both web views and API JSON responses.
 
-### 🌐 Web Interface
+### Web Interface
 
 | Route | Description |
 | :--- | :--- |
 | **`/api/map`** | Renders a map with a **single** random coordinate. |
 | **`/api/maps?count=10`** | Renders a map with **10** (or defined count) random coordinates. |
 
-### 🔌 API Endpoints
+### API Endpoints
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
 | `GET` | **`/api/coordinates`** | Returns a single coordinate object JSON.<br>`{ "latitude": 41.0, "longitude": 29.0 }` |
 | `GET` | **`/api/coordinates?count=N`** | Returns an array of `N` coordinate objects. |
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 random-map-visualizer/
-├── 📂 random-coordinate-generator/ # Source code for the custom NPM package
-├── 📂 routes/                      # Express route handlers (API & Render)
-├── 📂 views/                       # EJS templates for Map visualization
+├── random-coordinate-generator/ # Source code for the custom NPM package
+├── routes/                      # Express route handlers (API & Render)
+├── views/                       # EJS templates for Map visualization
 ├── index.js                        # Application entry point
 ├── package.json                    # Project dependencies and scripts
 └── README.md                       # Project documentation
 ```
 
-## 💻 Tech Stack
+## Tech Stack
 
 *   **Runtime**: Node.js
 *   **Web Framework**: Express.js
@@ -89,6 +89,6 @@ random-map-visualizer/
 *   **Maps API**: Yandex Maps
 *   **Core Library**: [@hamdi_ozkurt/random-coordinate-generator](https://www.npmjs.com/package/@hamdi_ozkurt/random-coordinate-generator)
 
-## 📄 License
+## License
 
 This project is licensed under the ISC License.
